@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Multiplication Table</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <!-- Input Div -->
+            <div id="inputs" class="col-md-6 bg-light p-2 mt-2 border border-dark">
+                <h2>Please Enter Numbers as Table Ranges</h2>
+                <form>
+                    <!-- Column inputs -->
+                    <label for="min_col">Min Column Value(values -50 to 50)</label><br>
+                    <input type="text" id="min_col" name="min_col"><br>
+                    <label for="max_col">Max Column Value(values -50 to 50)</label><br>
+                    <input type="text" id="max_col" name="max_col"><br>
+                    <!-- Row inputs -->
+                    <label for="min_row">Min Row Value(values -50 to 50)</label><br>
+                    <input type="text" id="min_row" name="min_row"><br>
+                    <label for="max_row">Max Row Value(values -50 to 50)</label><br>
+                    <input type="text" id="max_row" name="max_row"><br>
+                    <br>
+                    <input type="button" value="Submit" onclick="makeTable()" />
+                </form>
+            </div>
+        </div>
+        <div class="row-md-12">
+            <div id="table" class="col-md-12 overflow-auto mt-2">
+            </div>
+        </div>
+    
+    </div>
+    <script src="indexJS.js"></script>
+  </body>
+</html>
